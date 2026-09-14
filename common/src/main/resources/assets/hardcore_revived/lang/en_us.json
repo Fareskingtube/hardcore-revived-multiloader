@@ -1,0 +1,44 @@
+{
+  "config.hardcore_revived.title": "Hardcore Revived Config",
+
+  "config.hardcore_revived.category.client": "Client",
+  "config.hardcore_revived.category.description.client": "Client only config",
+  "config.hardcore_revived.category.common": "Common",
+  "config.hardcore_revived.category.description.common": "Server and client config. Might not apply if you're on a public server or require a restart",
+
+  "config.hardcore_revived.group.player_selection_screen": "Player Selection Screen",
+  "config.hardcore_revived.group.description.player_selection_screen": "The screen that appears when using the hardcore heart",
+
+  "config.hardcore_revived.option.apply_darkening": "Background Darkening",
+  "config.hardcore_revived.option.description.apply_darkening": "Whether the player selection screen has a dark transparent background",
+  "config.hardcore_revived.option.apply_blur": "Background Blur",
+  "config.hardcore_revived.option.description.apply_blur": "Whether the player selection screen has a blur on the background",
+
+  "config.hardcore_revived.group.items": "Items",
+
+  "config.hardcore_revived.option.heartActivationTime": "Heart Activation Time",
+  "config.hardcore_revived.option.description.heartActivationTime": "The time it takes to open the player selector screen from using the heart",
+  "config.hardcore_revived.option.killPenalty": "Kill Penalty",
+  "config.hardcore_revived.option.description.killPenalty": "The amount of hp a player loses when killing another player",
+
+  "gui.hardcore_revived.player_selector_screen.title": "Select a player",
+  "gui.hardcore_revived.player_selector_screen.search": "Search for a player...",
+  "gui.hardcore_revived.player_selector_screen.no_players": "No Players Found",
+
+  "misc.hardcore_revived.player_kill_warn": "Killing a player may result in \"Punishment\" ",
+  "misc.hardcore_revived.player_kill": "Punishment be upon you",
+
+  "item.hardcore_revived.butcher_knife": "Butcher Knife",
+  "item.hardcore_revived.hardcore_heart": "Hardcore Heart",
+  "item.hardcore_revived.heart_extractor": "Heart Extractor",
+  "item.hardcore_revived.heart_injector.empty": "Empty Heart Injector",
+  "item.hardcore_revived.heart_injector.filled": "Filled Heart Injector",
+  "item.hardcore_revived.resuscitatio_mortuorum.name": "Resuscitatio Mortuorum",
+  "item.hardcore_revived.resuscitatio_mortuorum.landing_text": "A book that explains everything about §4reviving §4the §4dead",
+  "item.hardcore_revived.blood": "Blood",
+
+  "block.hardcore_revived.revival_altar": "Revival Altar",
+  "block.hardcore_revived.blood_block": "Blood Block",
+
+  "itemGroup.hardcore_revived.hardcore_revived_group": "Hardcore Revived"
+}

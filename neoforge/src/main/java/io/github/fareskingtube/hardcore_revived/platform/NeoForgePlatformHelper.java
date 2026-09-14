@@ -1,6 +1,7 @@
 package io.github.fareskingtube.hardcore_revived.platform;
 
 import io.github.fareskingtube.hardcore_revived.platform.services.IPlatformHelper;
+import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 
@@ -22,5 +23,9 @@ public class NeoForgePlatformHelper implements IPlatformHelper {
     public boolean isDevelopmentEnvironment() {
 
         return !FMLLoader.isProduction();
+    }
+
+    public CreativeModeTab.Builder creativeTabBuilder() {
+        return CreativeModeTab.builder();
     }
 }
