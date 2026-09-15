@@ -1,7 +1,6 @@
 package io.github.fareskingtube.hardcore_revived.item;
 
 import io.github.fareskingtube.hardcore_revived.Constants;
-
 import io.github.fareskingtube.hardcore_revived.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -19,7 +18,7 @@ public class ModCreativeTabs {
     public static final CreativeModeTab HARDCORE_REVIVED_GROUP = registerTab("hardcore_revived_group",
             Services.PLATFORM.creativeTabBuilder()
                     .title(Component.translatable("itemGroup." + Constants.MOD_ID + ".hardcore_revived_group"))
-                    .icon(ModItems.BUTCHER_KNIFE::getDefaultInstance)
+                    .icon(ModItems.HARDCORE_HEART::getDefaultInstance)
                     .displayItems((displayContext, entries) -> BuiltInRegistries.ITEM.keySet()
                             .stream()
                             .filter(key -> key.getNamespace().equals(Constants.MOD_ID))

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "hardcore_revived:blood"
+    },
+    {
+      "item": "hardcore_revived:blood"
+    },
+    {
+      "item": "hardcore_revived:blood"
+    },
+    {
+      "item": "hardcore_revived:blood"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "hardcore_revived:blood_block"
+  }
+}

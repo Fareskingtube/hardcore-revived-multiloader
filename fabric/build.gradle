@@ -10,7 +10,7 @@ dependencies {
     }
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
-    
+
     modImplementation "curse.maven:modmenu-308702:7808443"
 }
 
@@ -35,5 +35,11 @@ loom {
             ideConfigGenerated(true)
             runDir('runs/server')
         }
+    }
+}
+
+fabricApi {
+    configureDataGeneration() {
+        outputDirectory = project(':common').file('src/main/generated')
     }
 }

@@ -1,7 +1,5 @@
 package io.github.fareskingtube.hardcore_revived.mixin;
 
-import io.github.fareskingtube.hardcore_revived.Constants;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

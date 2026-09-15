@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hardcore_revived:item/heart_injector_empty"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "hardcore_revived:has_heart": 1
+      },
+      "model": "hardcore_revived:item/heart_injector_filled"
+    }
+  ]
+}

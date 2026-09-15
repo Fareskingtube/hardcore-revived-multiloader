@@ -2,11 +2,11 @@ package io.github.fareskingtube.hardcore_revived;
 
 
 import io.github.fareskingtube.hardcore_revived.block.ModBlocks;
+import io.github.fareskingtube.hardcore_revived.block.entity.ModBlockEntities;
 import io.github.fareskingtube.hardcore_revived.component.ModDataComponentTypes;
 import io.github.fareskingtube.hardcore_revived.item.ModCreativeTabs;
 import io.github.fareskingtube.hardcore_revived.item.ModItems;
 import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -39,6 +39,7 @@ public class HardcoreRevived {
         bind(Registries.ITEM, ModItems::registerModItems);
         bind(Registries.CREATIVE_MODE_TAB, ModCreativeTabs::registerModCreativeTabs);
         bind(Registries.DATA_COMPONENT_TYPE, ModDataComponentTypes::registerDataComponentTypes);
+        bind(Registries.BLOCK_ENTITY_TYPE, ModBlockEntities::registerBlockEntities);
     }
 
     /**

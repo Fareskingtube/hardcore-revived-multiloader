@@ -7,7 +7,6 @@ import io.github.fareskingtube.hardcore_revived.item.custom.HeartInjectorItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

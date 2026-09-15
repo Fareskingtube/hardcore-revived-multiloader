@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "hardcore-revived:heart_injector"
+      "item": "hardcore_revived:heart_injector"
     },
     {
-      "item": "hardcore-revived:hardcore_heart"
+      "item": "hardcore_revived:hardcore_heart"
     }
   ],
   "result": {
-    "id": "hardcore-revived:heart_injector",
+    "id": "hardcore_revived:heart_injector",
     "count": 1,
     "components": {
-      "hardcore-revived:has_heart": true
+      "hardcore_revived:has_heart": true
     }
   }
 }

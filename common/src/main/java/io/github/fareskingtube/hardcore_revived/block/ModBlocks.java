@@ -1,7 +1,7 @@
 package io.github.fareskingtube.hardcore_revived.block;
 
 import io.github.fareskingtube.hardcore_revived.Constants;
-import net.minecraft.core.registries.BuiltInRegistries;
+import io.github.fareskingtube.hardcore_revived.block.custom.RevivalAltarBlock;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -16,6 +16,11 @@ import java.util.function.BiConsumer;
 public class ModBlocks {
     private static final Map<Block, ResourceLocation> BLOCKS = new LinkedHashMap<>();
     private static final Map<BlockItem, ResourceLocation> BLOCK_ITEMS = new LinkedHashMap<>();
+
+    public static final Block REVIVAL_ALTAR = registerBlock("revival_altar", new RevivalAltarBlock(BlockBehaviour.Properties.of()
+            .noOcclusion()
+            .requiresCorrectToolForDrops()
+            .strength(3.5F, 6.0F)));
 
     public static final Block BLOOD_BLOCK = registerBlock("blood_block", new Block(BlockBehaviour.Properties.of()
             .strength(0.6F, 2F)
