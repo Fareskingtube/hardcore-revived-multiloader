@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hardcore_revived:hardcore_heart"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "hardcore_revived:hardcore_heart"
+  }
+}

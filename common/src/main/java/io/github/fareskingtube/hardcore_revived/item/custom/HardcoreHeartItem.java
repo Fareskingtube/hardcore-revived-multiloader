@@ -3,6 +3,9 @@ package io.github.fareskingtube.hardcore_revived.item.custom;
 import com.mojang.authlib.GameProfile;
 import io.github.fareskingtube.hardcore_revived.Constants;
 import io.github.fareskingtube.hardcore_revived.component.ModDataComponentTypes;
+import io.github.fareskingtube.hardcore_revived.network.packet.DeadPlayersPayloadS2C;
+import io.github.fareskingtube.hardcore_revived.persistent.DeadPlayersState;
+import io.github.fareskingtube.hardcore_revived.platform.Services;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -29,7 +32,7 @@ public class HardcoreHeartItem extends HoldActivateItem {
         MinecraftServer server = world.getServer();
         if (server != null && !world.isClientSide && user instanceof ServerPlayer player) {
             /* Gets the list of Players from Persistent Data and sends a Packet to the Client with the list of the dead players */
-            // ServerPlayNetworking.send(player, new DeadPlayersPayloadS2C(DeadPlayersState.get(server).getDeadPlayers()));
+            Services.PLATFORM.sendPacketS2C(player, new DeadPlayersPayloadS2C(DeadPlayersState.get(server).getDeadPlayers()));
             // TODO: Delete this after testing
             // GameProfile profile = new GameProfile(player.getUuid(), player.getNameForScoreboard());
             // ServerPlayNetworking.send(player, new DeadPlayersPayloadS2C(List.of(

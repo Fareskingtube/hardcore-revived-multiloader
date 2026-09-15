@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "hardcore_revived:blood_block"
+    },
+    "D": {
+      "item": "minecraft:deepslate_tiles"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "pattern": [
+    "BGB",
+    "BDB",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "hardcore_revived:revival_altar"
+  }
+}

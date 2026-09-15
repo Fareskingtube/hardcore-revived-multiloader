@@ -1,5 +1,7 @@
 package io.github.fareskingtube.hardcore_revived.platform.services;
 
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.CreativeModeTab;
 
 public interface IPlatformHelper {
@@ -37,4 +39,14 @@ public interface IPlatformHelper {
     }
 
     CreativeModeTab.Builder creativeTabBuilder();
+
+    /**
+     * Sends a packet from the client to the server
+     **/
+    void sendPacketC2S(CustomPacketPayload payload);
+
+    /**
+     * Sends a packet from the server to the client
+     **/
+    void sendPacketS2C(ServerPlayer player, CustomPacketPayload payload);
 }

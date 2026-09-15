@@ -10,6 +10,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -21,15 +22,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void buildRecipes(RecipeOutput exporter) {
         // Revival Altar Recipe
-        // ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REVIVAL_ALTAR)
-        //         .pattern("BGB")
-        //         .pattern("BDB")
-        //         .pattern("DDD")
-        //         .define('B', ModBlocks.BLOOD_BLOCK)
-        //         .define('G', Blocks.GOLD_BLOCK)
-        //         .define('D', Blocks.DEEPSLATE_TILES)
-        //         .unlockedBy(getHasName(ModBlocks.REVIVAL_ALTAR), has(ModBlocks.BLOOD_BLOCK))
-        //         .save(exporter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REVIVAL_ALTAR)
+                .pattern("BGB")
+                .pattern("BDB")
+                .pattern("DDD")
+                .define('B', ModBlocks.BLOOD_BLOCK)
+                .define('G', Blocks.GOLD_BLOCK)
+                .define('D', Blocks.DEEPSLATE_TILES)
+                .unlockedBy(getHasName(ModBlocks.REVIVAL_ALTAR), has(ModBlocks.BLOOD_BLOCK))
+                .save(exporter);
         // Heart Injector recipe (temporary)
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HEART_INJECTOR)
                 .pattern("I ")
@@ -66,5 +67,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .unlockedBy(getHasName(ModBlocks.BLOOD_BLOCK), has(ModItems.BLOOD))
                 .save(exporter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.HARDCORE_HEART)
+                .requires(ModItems.HARDCORE_HEART)
+                .unlockedBy(getHasName(ModItems.HARDCORE_HEART), has(ModItems.HARDCORE_HEART))
+                .save(exporter);
     }
 }
