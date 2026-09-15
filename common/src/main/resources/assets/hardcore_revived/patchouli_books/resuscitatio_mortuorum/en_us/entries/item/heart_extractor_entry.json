@@ -1,0 +1,14 @@
+{
+  "name": "Heart Injector",
+  "icon": "hardcore_revived:heart_extractor",
+  "category": "hardcore_revived:item_category",
+  "pages": [
+    "The heart extractor is used to.. extract hearts. Just craft it and Hold $(l)[Right Click]$() in the air and it will extract one of your hearts and give it to you.$(br2)$(c)Be careful it only has one use.",
+    {
+      "type": "patchouli:crafting",
+      "title": "Heart Extractor Recipe",
+      "recipe": "hardcore_revived:heart_extractor",
+      "text": "$(8)Who would've thought that such a powerful item is so cheap."
+    }
+  ]
+}

@@ -45,6 +45,10 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
+    maven {
+        name = "Xander Maven"
+        url = "https://maven.isxander.dev/releases"
+    }
 }
 
 // Declare capabilities on the outgoing configurations.

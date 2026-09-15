@@ -6,6 +6,7 @@ import io.github.fareskingtube.hardcore_revived.block.entity.ModBlockEntities;
 import io.github.fareskingtube.hardcore_revived.block.entity.TickableBlockEntity;
 import io.github.fareskingtube.hardcore_revived.component.ModDataComponentTypes;
 import io.github.fareskingtube.hardcore_revived.item.ModItems;
+import io.github.fareskingtube.hardcore_revived.multiblock.ModMultiblocks;
 import io.github.fareskingtube.hardcore_revived.persistent.DeadPlayersState;
 import io.github.fareskingtube.hardcore_revived.persistent.QueuedPlayer;
 import io.github.fareskingtube.hardcore_revived.persistent.RevivalQueueState;
@@ -31,6 +32,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
@@ -233,14 +235,13 @@ public class RevivalAltarBlockEntity extends BlockEntity implements ImplementedI
     }
 
     public boolean isMultiblock(Level world, BlockPos pos) {
-        // boolean validateMultiblock = ModMultiblocks.REVIVAL_ALTAR_MULTIBLOCK.validate(world, pos.below(), Rotation.NONE);
+        boolean validateMultiblock = ModMultiblocks.REVIVAL_ALTAR_MULTIBLOCK.validate(world, pos.below(), Rotation.NONE);
 
-        // if (!this.isMultiblock && validateMultiblock) {
-        //     world.playSound(null, pos, SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.BLOCKS, 1F, 1F);
-        // }
+        if (!this.isMultiblock && validateMultiblock) {
+            world.playSound(null, pos, SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.BLOCKS, 1F, 1F);
+        }
 
-        // return validateMultiblock;
-        return false;
+        return validateMultiblock;
     }
 
     public boolean getIsMultiblock() {

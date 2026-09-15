@@ -1,0 +1,35 @@
+{
+  "name": "Revival Altar",
+  "icon": "hardcore_revived:revival_altar",
+  "category": "hardcore_revived:multiblock_category",
+  "pages": [
+    "The Revival Altar is a multiblock that is used to $(l)$(#5f1912)revive the dead$(). all you have to do is $(l)$(#5f1912)sacrifice$() one of your hearts. $(br)The Revival Altar has 2 uses:$(li)Healing: If the multiblock is constructed correctly it will provide regeneration to anyone withing it's range.$(li)Reviving the dead: To revive a friend you must use a $(#5f1912)Heart Extractor$() to get a $(#5f1912)Hardcore Heart$() $(br)Once you have a $(#5f1912)Hardcore Heart$() just plop it into the Revival Altar and any $(l)$(7)ghosts$() nearby shall be $(l)$(#5f1912)reincarnated$().",
+    {
+      "type": "patchouli:multiblock",
+      "name": "Revival Altar Multiblock",
+      "multiblock_id": "hardcore_revived:revival_altar_multiblock",
+      "text": "Tip: Click the eye icon to visualize the multiblock!"
+    },
+    {
+      "type": "hardcore_revived:materials_list",
+      "title": "Resources Required",
+      "item1": "minecraft:polished_blackstone_bricks#88",
+      "item2": "minecraft:polished_blackstone_brick_slab#56",
+      "item3": "minecraft:polished_blackstone_brick_stairs#32",
+      "item4": "minecraft:polished_blackstone#16",
+      "item5": "minecraft:polished_blackstone_brick_wall#16",
+      "item6": "minecraft:nether_brick_fence#8",
+      "item7": "hardcore_revived:blood_block#5",
+      "item8": "minecraft:chiseled_polished_blackstone#4",
+      "item9": "minecraft:gold_block#4",
+      "item10": "minecraft:redstone_block#4",
+      "item11": "hardcore_revived:revival_altar"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Revival Altar Block",
+      "text": "This is the recipe of the revival altar block. The center of the full altar",
+      "recipe": "hardcore_revived:revival_altar"
+    }
+  ]
+}

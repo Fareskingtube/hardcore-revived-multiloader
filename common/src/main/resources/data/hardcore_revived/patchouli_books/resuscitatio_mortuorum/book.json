@@ -1,0 +1,9 @@
+{
+  "name": "item.hardcore_revived.resuscitatio_mortuorum.name",
+  "landing_text": "item.hardcore_revived.resuscitatio_mortuorum.landing_text",
+  "version": 1,
+  "creative_tab": "hardcore_revived:hardcore_revived_group",
+  "book_texture": "patchouli:textures/gui/book_red.png",
+  "model": "hardcore_revived:resuscitatio_mortuorum",
+  "use_resource_pack": true
+}

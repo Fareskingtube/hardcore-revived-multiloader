@@ -1,0 +1,16 @@
+{
+  "name": "Hardcore Heart",
+  "icon": "hardcore_revived:hardcore_heart",
+  "category": "hardcore_revived:item_category",
+  "pages": [
+    "This very powerful item can be used to $(l)$(#5f1912)revive the dead$(). Look at the $(l:multiblock/revival_altar_entry)$(#5f1912)Revival Altar$() for that. $(br2)You can also inject it back: $(l:item/heart_injector_entry)$(#5f1912)Heart Injector$().",
+    {
+      "type": "patchouli:spotlight",
+      "title": "Hardcore Heart",
+      "text": "The manifestation of your heart in your hand. Can be obtained by a $(l:item/heart_extractor_entry)$(#5f1912)Heart Extractor",
+      "item": {
+        "item": "hardcore_revived:hardcore_heart"
+      }
+    }
+  ]
+}

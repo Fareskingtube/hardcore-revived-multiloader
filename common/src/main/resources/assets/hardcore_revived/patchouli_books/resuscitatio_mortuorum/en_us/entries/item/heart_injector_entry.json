@@ -1,0 +1,14 @@
+{
+  "name": "Heart Injector",
+  "icon": "hardcore_revived:heart_injector",
+  "category": "hardcore_revived:item_category",
+  "pages": [
+    "Have you ever accidentally extracted a heart or been gifted a heart by a friend?$(br2)Well, the heart injector is the tool for you. Just simply put it in a crafting table with a heart and inject it into your self by Holding $(l)[Right Click]$() with it in the air",
+    {
+      "type": "patchouli:crafting",
+      "title": "Heart Injector Recipes",
+      "recipe": "hardcore_revived:heart_injector",
+      "recipe2": "hardcore_revived:heart_injector_filled"
+    }
+  ]
+}

@@ -6,12 +6,14 @@ import io.github.fareskingtube.hardcore_revived.block.entity.ModBlockEntities;
 import io.github.fareskingtube.hardcore_revived.component.ModDataComponentTypes;
 import io.github.fareskingtube.hardcore_revived.item.ModCreativeTabs;
 import io.github.fareskingtube.hardcore_revived.item.ModItems;
+import io.github.fareskingtube.hardcore_revived.multiblock.ModMultiblocks;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.registries.RegisterEvent;
 
 import java.util.function.BiConsumer;
@@ -40,6 +42,8 @@ public class HardcoreRevived {
         bind(Registries.CREATIVE_MODE_TAB, ModCreativeTabs::registerModCreativeTabs);
         bind(Registries.DATA_COMPONENT_TYPE, ModDataComponentTypes::registerDataComponentTypes);
         bind(Registries.BLOCK_ENTITY_TYPE, ModBlockEntities::registerBlockEntities);
+
+        eventBus.addListener((FMLCommonSetupEvent event) -> ModMultiblocks.registerModMultiBlocks());
     }
 
     /**

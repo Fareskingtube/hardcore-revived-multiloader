@@ -1,0 +1,13 @@
+{
+  "name": "Blood Block",
+  "icon": "hardcore_revived:blood_block",
+  "category": "hardcore_revived:block_category",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "title": "Blood Block",
+      "text": "It's just a blood block.. used for building things like the $(l:multiblock/revival_altar_entry)$(#5f1912)Revival Altar$().",
+      "recipe": "hardcore_revived:blood_block"
+    }
+  ]
+}

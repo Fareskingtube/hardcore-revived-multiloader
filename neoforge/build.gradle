@@ -3,6 +3,13 @@ plugins {
     id 'net.neoforged.moddev'
 }
 
+dependencies {
+    // Patchouli. Used for the guide book and making the multiblock.
+    implementation("vazkii.patchouli:Patchouli:${patchouli_version}-NEOFORGE")
+    // // Yet Another Config Lib. Used to make the configs.
+    // implementation("dev.isxander:yet-another-config-lib:${yacl_version}-neoforge")
+}
+
 neoForge {
     version = neoforge_version
     // Automatically enable neoforge AccessTransformers if the file exists
