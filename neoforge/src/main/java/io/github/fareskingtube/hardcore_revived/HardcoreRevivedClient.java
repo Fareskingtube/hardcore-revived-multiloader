@@ -2,6 +2,7 @@ package io.github.fareskingtube.hardcore_revived;
 
 import io.github.fareskingtube.hardcore_revived.block.entity.ModBlockEntities;
 import io.github.fareskingtube.hardcore_revived.block.entity.renderer.RevivalAltarBlockEntityRenderer;
+import io.github.fareskingtube.hardcore_revived.config.ClientConfig;
 import io.github.fareskingtube.hardcore_revived.util.ModModelPredicates;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.neoforged.api.distmarker.Dist;
@@ -15,6 +16,9 @@ public class HardcoreRevivedClient {
     static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(
                 () -> {
+                    // Loading default client config to disk
+                    ClientConfig.load();
+
                     ModModelPredicates.registerModelPredicates();
                     BlockEntityRenderers.register(ModBlockEntities.REVIVAL_ALTAR_BE, RevivalAltarBlockEntityRenderer::new);
                 }

@@ -3,6 +3,7 @@ package io.github.fareskingtube.hardcore_revived.item.custom;
 import com.mojang.authlib.GameProfile;
 import io.github.fareskingtube.hardcore_revived.Constants;
 import io.github.fareskingtube.hardcore_revived.component.ModDataComponentTypes;
+import io.github.fareskingtube.hardcore_revived.config.CommonConfig;
 import io.github.fareskingtube.hardcore_revived.network.packet.DeadPlayersPayloadS2C;
 import io.github.fareskingtube.hardcore_revived.persistent.DeadPlayersState;
 import io.github.fareskingtube.hardcore_revived.platform.Services;
@@ -24,7 +25,7 @@ public class HardcoreHeartItem extends HoldActivateItem {
     }
 
     private static int getHeartActivationTime() {
-        return Math.max(20, 1);
+        return Math.max(CommonConfig.HANDLER.instance().heartActivationTime, 1);
     }
 
     @Override

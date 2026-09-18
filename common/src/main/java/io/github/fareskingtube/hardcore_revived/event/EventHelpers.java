@@ -3,6 +3,7 @@ package io.github.fareskingtube.hardcore_revived.event;
 import com.mojang.authlib.GameProfile;
 import io.github.fareskingtube.hardcore_revived.Constants;
 import io.github.fareskingtube.hardcore_revived.block.entity.custom.RevivalAltarBlockEntity;
+import io.github.fareskingtube.hardcore_revived.config.CommonConfig;
 import io.github.fareskingtube.hardcore_revived.item.ModItems;
 import io.github.fareskingtube.hardcore_revived.persistent.DeadPlayersState;
 import io.github.fareskingtube.hardcore_revived.persistent.QueuedPlayer;
@@ -44,7 +45,7 @@ public class EventHelpers {
             DeadPlayersState.get(server).addDeadPlayer(new GameProfile(player.getUUID(), player.getScoreboardName()));
         }
 
-        // CommonConfig config = CommonConfig.HANDLER.instance();
+        CommonConfig config = CommonConfig.HANDLER.instance();
         if (damageSource.getEntity() instanceof ServerPlayer killer) {
             if (livingEntity instanceof ServerPlayer) {
                 // TODO: Idea: Revive the victim instead of making the killer lose health
@@ -53,7 +54,7 @@ public class EventHelpers {
                 if (maxHealth != null && maxHealth.getValue() - 4 > 0) {
                     killer.sendSystemMessage(Component.translatable("misc." + Constants.MOD_ID + ".player_kill").withStyle(ChatFormatting.RED));
                     EntityType.LIGHTNING_BOLT.spawn((ServerLevel) world, killer.blockPosition(), MobSpawnType.TRIGGERED);
-                    maxHealth.setBaseValue(maxHealth.getValue() - 20);
+                    maxHealth.setBaseValue(maxHealth.getValue() - config.killPenalty);
                 }
             }
             if (livingEntity instanceof AgeableMob victim && killer.getMainHandItem().getItem() == ModItems.BUTCHER_KNIFE) {

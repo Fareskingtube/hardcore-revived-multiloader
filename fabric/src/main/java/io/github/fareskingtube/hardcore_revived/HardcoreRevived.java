@@ -3,6 +3,7 @@ package io.github.fareskingtube.hardcore_revived;
 import io.github.fareskingtube.hardcore_revived.block.ModBlocks;
 import io.github.fareskingtube.hardcore_revived.block.entity.ModBlockEntities;
 import io.github.fareskingtube.hardcore_revived.component.ModDataComponentTypes;
+import io.github.fareskingtube.hardcore_revived.config.CommonConfig;
 import io.github.fareskingtube.hardcore_revived.event.EventHelpers;
 import io.github.fareskingtube.hardcore_revived.item.ModCreativeTabs;
 import io.github.fareskingtube.hardcore_revived.item.ModItems;
@@ -32,6 +33,9 @@ public class HardcoreRevived implements ModInitializer {
         // Use Fabric to bootstrap the Common mod.
         CommonClass.init();
 
+        // Loading default common config to disk
+        CommonConfig.load();
+
         bind(BuiltInRegistries.BLOCK, ModBlocks::registerModBlocks);
         bind(BuiltInRegistries.ITEM, ModBlocks::registerModBlockItems);
         bind(BuiltInRegistries.ITEM, ModItems::registerModItems);
@@ -44,9 +48,7 @@ public class HardcoreRevived implements ModInitializer {
         ModMultiblocks.registerModMultiBlocks();
 
         ServerPlayerEvents.JOIN.register(EventHelpers::handelJoin);
-
         ServerLivingEntityEvents.AFTER_DEATH.register(EventHelpers::handelDeath);
-
         ServerLivingEntityEvents.AFTER_DAMAGE.register((livingEntity, damageSource, v, v1, b) -> EventHelpers.handelDamage(livingEntity, damageSource));
     }
 }

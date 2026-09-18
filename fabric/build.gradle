@@ -14,8 +14,8 @@ dependencies {
     modImplementation "curse.maven:modmenu-308702:7808443"
     // Patchouli. Used for the guide book and making the multiblock.
     modImplementation "vazkii.patchouli:Patchouli:${patchouli_version}-FABRIC"
-    // // Yet Another Config Lib. Used to make the configs.
-    // modImplementation "dev.isxander:yet-another-config-lib:${yacl_version}-fabric"
+    // Yet Another Config Lib. Used to make the configs.
+    modImplementation "dev.isxander:yet-another-config-lib:${yacl_version}-fabric"
 }
 
 loom {

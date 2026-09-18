@@ -5,11 +5,17 @@
   "name": "${mod_name}",
   "description": "${description}",
   "authors": [
-    "${mod_author}"
+    {
+      "name": "${mod_author}",
+      "contact": {
+        "homepage": "https://github.com/Fareskingtube"
+      }
+    }
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "${homepage}",
+    "sources": "${sourcePage}",
+    "issues": "${issues}"
   },
   "license": "${license}",
   "icon": "assets/${mod_id}/icon.png",
@@ -23,6 +29,9 @@
     ],
     "client": [
       "io.github.fareskingtube.hardcore_revived.HardcoreRevivedClient"
+    ],
+    "modmenu": [
+      "io.github.fareskingtube.hardcore_revived.config.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -33,7 +42,9 @@
     "fabricloader": ">=${fabric_loader_version}",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}",
-    "java": ">=${java_version}"
+    "java": ">=${java_version}",
+    "patchouli": ">=${patchouli_version}-FABRIC",
+    "yet_another_config_lib_v3": ">=${yacl_version}-fabric"
   },
   "suggests": {
     "another-mod": "*"

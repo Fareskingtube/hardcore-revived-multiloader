@@ -4,6 +4,8 @@ package io.github.fareskingtube.hardcore_revived;
 import io.github.fareskingtube.hardcore_revived.block.ModBlocks;
 import io.github.fareskingtube.hardcore_revived.block.entity.ModBlockEntities;
 import io.github.fareskingtube.hardcore_revived.component.ModDataComponentTypes;
+import io.github.fareskingtube.hardcore_revived.config.CommonConfig;
+import io.github.fareskingtube.hardcore_revived.config.ConfigUI;
 import io.github.fareskingtube.hardcore_revived.item.ModCreativeTabs;
 import io.github.fareskingtube.hardcore_revived.item.ModItems;
 import io.github.fareskingtube.hardcore_revived.multiblock.ModMultiblocks;
@@ -12,8 +14,10 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModLoadingContext;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.registries.RegisterEvent;
 
 import java.util.function.BiConsumer;
@@ -33,8 +37,14 @@ public class HardcoreRevived {
         // Use NeoForge to bootstrap the Common mod.
         HardcoreRevived.eventBus = eventBus;
 
-        Constants.LOG.info("Hello NeoForge world!");
         CommonClass.init();
+
+        // Loading default common config to disk
+        CommonConfig.load();
+        ModLoadingContext.get().registerExtensionPoint(
+                IConfigScreenFactory.class,
+                () -> (modContainer, parent) -> ConfigUI.createConfigScreen(parent)
+        );
 
         bind(Registries.BLOCK, ModBlocks::registerModBlocks);
         bind(Registries.ITEM, ModBlocks::registerModBlockItems);

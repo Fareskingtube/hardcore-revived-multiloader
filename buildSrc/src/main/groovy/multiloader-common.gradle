@@ -49,6 +49,10 @@ repositories {
         name = "Xander Maven"
         url = "https://maven.isxander.dev/releases"
     }
+    maven {
+        name = "Fabric"
+        url = "https://maven.fabricmc.net/"
+    }
 }
 
 // Declare capabilities on the outgoing configurations.
@@ -106,7 +110,12 @@ processResources {
             "forge_version"                : forge_version,
             "forge_loader_version_range"   : forge_loader_version_range,
             'credits'                      : credits,
-            'java_version'                 : java_version
+            'java_version'                 : java_version,
+            'homepage'                     : homepage,
+            'sourcePage'                   : sourcePage,
+            'issues'                       : issues,
+            'patchouli_version'            : patchouli_version,
+            'yacl_version'                 : yacl_version,
     ]
 
     filesMatching(['pack.mcmeta', 'fabric.mod.json', 'META-INF/mods.toml', 'META-INF/neoforge.mods.toml', '*.mixins.json']) {

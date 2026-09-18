@@ -3,6 +3,7 @@ package io.github.fareskingtube.hardcore_revived.gui.screen.custom;
 import com.mojang.authlib.GameProfile;
 import com.mojang.blaze3d.systems.RenderSystem;
 import io.github.fareskingtube.hardcore_revived.Constants;
+import io.github.fareskingtube.hardcore_revived.config.ClientConfig;
 import io.github.fareskingtube.hardcore_revived.util.PlayerProfileTextureCache;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -65,9 +66,9 @@ public class PlayerSelectorScreen extends Screen {
         this.panelHeight = bottom - this.panelY;
 
         // Apply blur and darkening based on config
-        // var config = ClientConfig.HANDLER.instance();
-        // this.darkenEnabled = config.isApplyDarkening;
-        // this.blurEnabled = config.isApplyBlur;
+        var config = ClientConfig.HANDLER.instance();
+        this.darkenEnabled = config.isApplyDarkening;
+        this.blurEnabled = config.isApplyBlur;
     }
 
     /* The Search field widget with custom styling */

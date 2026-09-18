@@ -24,8 +24,8 @@ dependencies {
 
     // Patchouli. Used for the guide book and making the multiblock.
     compileOnly group: "vazkii.patchouli", name: "Patchouli-xplat", version: "${patchouli_version}", transitive: false
-    // // Yet Another Config Lib. Used to make the configs.
-    // compileOnly group: "dev.isxander", name: "yet-another-config-lib", version: "${yacl_version}-fabric"
+    // Yet Another Config Lib. Used to make the configs.
+    compileOnly "dev.isxander:yet-another-config-lib:${yacl_version}-neoforge"
 }
 
 configurations {
