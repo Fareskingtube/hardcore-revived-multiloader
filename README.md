@@ -52,10 +52,11 @@ You should spawn with it when making a new world, but you can also craft it with
 
 Currently Hardcore Revived only works on version 1.21.1 of minecraft.
 
-## Mod Loader
+## Mod Loaders
 
-Hardcore Revived only supports the [Fabric Mod Loader](https://fabricmc.net/) and
-requires [Fabric API](https://github.com/FabricMC/fabric-api).
+1. Hardcore Revived supports the [Fabric Mod Loader](https://fabricmc.net/) and
+   requires [Fabric API](https://github.com/FabricMC/fabric-api).
+2. Hardcore Revived supports the [NeoForge Mod Loader](https://neoforged.net/).
 
 ## Dependencies
 
@@ -64,11 +65,11 @@ These are mods you must have in your `mods/` folder for the mod to work correctl
 [//]: # (TODO: Add diffrent links based on the platform)
 
 * [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api/)
-  Version [0.116.12+1.21.1](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/8073321) or higher.
-* [Patchouli (Fabric)](https://www.curseforge.com/minecraft/mc-mods/patchouli-fabric)
+  Version [0.116.12+1.21.1](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/8073321) or higher. **(Fabric)**
+* [Patchouli](https://modrinth.com/mod/patchouli/versions)
   Version [1.21.1-93](https://www.curseforge.com/minecraft/mc-mods/patchouli-fabric/files/7730941) or higher.
-* [YACL](https://www.curseforge.com/minecraft/mc-mods/yacl)
-  Version [3.8.2](https://www.curseforge.com/minecraft/mc-mods/yacl/files/7437855) or higher.
+* [YACL](https://modrinth.com/mod/yacl)
+  Version [3.8.1](https://www.curseforge.com/minecraft/mc-mods/yacl/files/7437855) or higher.
 
 ## Integration
 
@@ -145,7 +146,7 @@ Any other assets were made entirely by the [authors](#authors).
 **You're allowed to use this mod in your modpack. You don't have to ask permission.**
 
 [//]: # (TODO: Add Discord Link)
-Although I would be interested in knowing what you're making. Take a look at the [discord]() if you need my help or
-want to show me your projects.
+Although I would be interested in knowing what you're making. Take a look at the [discord](https://discord.gg/ax77CExRx2) if you need my help or
+want to show your projects.
 
 
