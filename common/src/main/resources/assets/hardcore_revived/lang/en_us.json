@@ -29,6 +29,7 @@
   "misc.hardcore_revived.player_kill": "Punishment be upon you",
 
   "item.hardcore_revived.butcher_knife": "Butcher Knife",
+  "item.hardcore_revived.butcher_knife.tooltip_0": "Use to kill a passive mob to obtain blood",
   "item.hardcore_revived.hardcore_heart": "Hardcore Heart",
   "item.hardcore_revived.heart_extractor": "Heart Extractor",
   "item.hardcore_revived.heart_injector.empty": "Empty Heart Injector",
@@ -36,6 +37,7 @@
   "item.hardcore_revived.resuscitatio_mortuorum.name": "Resuscitatio Mortuorum",
   "item.hardcore_revived.resuscitatio_mortuorum.landing_text": "A book that explains everything about §4reviving §4the §4dead",
   "item.hardcore_revived.blood": "Blood",
+  "item.hardcore_revived.blood.tooltip_0": "Obtained by killing passive mobs with a butcher knife",
 
   "block.hardcore_revived.revival_altar": "Revival Altar",
   "block.hardcore_revived.blood_block": "Blood Block",
