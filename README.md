@@ -91,8 +91,8 @@ fine.
 
 # Installation
 
-To install the mod you just need to put the `.jar` file in your
-`YOUR_MINECRAFT_INSTANCE/mods/` folder with the [Dependency Mods](#dependencies) on a [Fabric](https://fabricmc.net/)
+To install the mod you just need to put the corosponding `.jar` file in your
+`YOUR_MINECRAFT_INSTANCE/mods/` folder with the [Dependency Mods](#dependencies) on a [Fabric](https://fabricmc.net/) or [NeoForge](https://neoforged.net/)
 installation.
 
 # AI usage
