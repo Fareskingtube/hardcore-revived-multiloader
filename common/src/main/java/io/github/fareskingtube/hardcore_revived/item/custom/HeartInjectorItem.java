@@ -34,9 +34,7 @@ public class HeartInjectorItem extends HoldActivateItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player user, InteractionHand hand) {
         ItemStack itemStack = user.getItemInHand(hand);
-        Boolean hasHeart = itemStack.get(ModDataComponentTypes.HAS_HEART);
-
-        if (hasHeart != null && hasHeart) {
+        if (itemStack.has(ModDataComponentTypes.HAS_HEART)) {
             if (getUseDuration(itemStack, user) <= 0) {
                 finishUsingItem(itemStack, world, user);
             } else {
@@ -47,7 +45,7 @@ public class HeartInjectorItem extends HoldActivateItem {
         return InteractionResultHolder.fail(itemStack);
     }
 
-    //    Changing the name of the Heart Importer based on the HAS_HEART Data Component
+    // Changing the name of the Heart Importer based on the HAS_HEART Data Component
     @Override
     public Component getName(ItemStack stack) {
         Boolean hasHeart = stack.get(ModDataComponentTypes.HAS_HEART);

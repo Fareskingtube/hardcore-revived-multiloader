@@ -1,6 +1,7 @@
 package io.github.fareskingtube.hardcore_revived.block;
 
 import io.github.fareskingtube.hardcore_revived.Constants;
+import io.github.fareskingtube.hardcore_revived.block.custom.DeadManSwitchBlock;
 import io.github.fareskingtube.hardcore_revived.block.custom.RevivalAltarBlock;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
@@ -21,6 +22,12 @@ public class ModBlocks {
             .noOcclusion()
             .requiresCorrectToolForDrops()
             .strength(3.5F, 6.0F)));
+
+    public static final Block DEAD_MAN_SWITCH = registerBlock("dead_man_switch",
+            new DeadManSwitchBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5F, 6.0F)));
 
     public static final Block BLOOD_BLOCK = registerBlock("blood_block", new Block(BlockBehaviour.Properties.of()
             .strength(0.6F, 2F)

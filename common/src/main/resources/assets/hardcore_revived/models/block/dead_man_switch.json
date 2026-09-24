@@ -1,0 +1,248 @@
+{
+  "format_version": "1.9.0",
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    64,
+    64
+  ],
+  "textures": {
+    "particle": "minecraft:block/deepslate",
+    "2": "hardcore_revived:block/dead_man_switch"
+  },
+  "elements": [
+    {
+      "name": "Pedestal",
+      "from": [
+        6,
+        1,
+        6
+      ],
+      "to": [
+        10,
+        2,
+        10
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          7,
+          1,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            4,
+            1,
+            4.25
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            4,
+            0.25,
+            5,
+            0.5
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            4,
+            0.75,
+            5,
+            1
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            1,
+            4,
+            2,
+            4.25
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            4,
+            1.75,
+            5,
+            2.75
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            4,
+            2.75,
+            5,
+            3.75
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "Base",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        1,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          7,
+          0,
+          0
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4.25,
+            0,
+            8.25,
+            0.25
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            4.25,
+            0.5,
+            8.25,
+            0.75
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            4.25,
+            1,
+            8.25,
+            1.25
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            4.25,
+            1.5,
+            8.25,
+            1.75
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            4
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            0,
+            4.25,
+            4,
+            8.25
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "name": "Support",
+      "from": [
+        7,
+        2,
+        8
+      ],
+      "to": [
+        9,
+        3,
+        9
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          7,
+          2,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            1.25,
+            4.5,
+            1.5
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            4,
+            0,
+            4.25,
+            0.25
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            2,
+            4,
+            2.5,
+            4.25
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            4,
+            0.5,
+            4.25,
+            0.75
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            2.5,
+            4,
+            3,
+            4.25
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            3,
+            4,
+            3.5,
+            4.25
+          ],
+          "texture": "#2"
+        }
+      }
+    }
+  ]
+}

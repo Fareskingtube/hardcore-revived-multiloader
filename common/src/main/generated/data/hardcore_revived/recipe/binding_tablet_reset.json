@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hardcore_revived:binding_tablet"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "hardcore_revived:binding_tablet"
+  }
+}

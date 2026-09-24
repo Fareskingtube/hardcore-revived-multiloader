@@ -66,7 +66,7 @@ public class HardcoreHeartItem extends HoldActivateItem {
         MutableComponent name = Component.translatable("item." + Constants.MOD_ID + ".hardcore_heart");
 
         if (selectedPlayerName != null) {
-            name = name.append(Component.literal(" (" + selectedPlayerName + ")").withStyle(ChatFormatting.GREEN));
+            name = name.append(Component.literal(" (" + selectedPlayerName + ")").withStyle(ChatFormatting.DARK_RED));
         }
 
         return name;

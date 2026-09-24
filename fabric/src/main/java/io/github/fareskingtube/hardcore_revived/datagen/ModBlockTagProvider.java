@@ -16,10 +16,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void addTags(HolderLookup.Provider lookup) {
         getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
-                // .add(ModBlocks.REVIVAL_ALTAR)
+                .add(ModBlocks.REVIVAL_ALTAR)
+                .add(ModBlocks.DEAD_MAN_SWITCH)
                 .add(ModBlocks.BLOOD_BLOCK);
-        // getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-        //         .add(ModBlocks.REVIVAL_ALTAR);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.REVIVAL_ALTAR);
+        getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_STONE_TOOL)
+                .add(ModBlocks.DEAD_MAN_SWITCH);
         getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.BLOOD_BLOCK);
         getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_HOE)

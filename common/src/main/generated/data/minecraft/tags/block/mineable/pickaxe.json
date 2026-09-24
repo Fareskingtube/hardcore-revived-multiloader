@@ -1,5 +1,7 @@
 {
   "values": [
+    "hardcore_revived:revival_altar",
+    "hardcore_revived:dead_man_switch",
     "hardcore_revived:blood_block"
   ]
 }

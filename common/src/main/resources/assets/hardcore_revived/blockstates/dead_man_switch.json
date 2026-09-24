@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,powered=false": {
+      "model": "hardcore_revived:block/dead_man_switch"
+    },
+    "facing=south,powered=false": {
+      "model": "hardcore_revived:block/dead_man_switch",
+      "y": 180
+    },
+    "facing=east,powered=false": {
+      "model": "hardcore_revived:block/dead_man_switch",
+      "y": 90
+    },
+    "facing=west,powered=false": {
+      "model": "hardcore_revived:block/dead_man_switch",
+      "y": 270
+    },
+    "facing=north,powered=true": {
+      "model": "hardcore_revived:block/dead_man_switch_powered"
+    },
+    "facing=south,powered=true": {
+      "model": "hardcore_revived:block/dead_man_switch_powered",
+      "y": 180
+    },
+    "facing=east,powered=true": {
+      "model": "hardcore_revived:block/dead_man_switch_powered",
+      "y": 90
+    },
+    "facing=west,powered=true": {
+      "model": "hardcore_revived:block/dead_man_switch_powered",
+      "y": 270
+    }
+  }
+}

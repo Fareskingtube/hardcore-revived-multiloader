@@ -38,9 +38,12 @@
   "item.hardcore_revived.resuscitatio_mortuorum.landing_text": "A book that explains everything about §4reviving §4the §4dead",
   "item.hardcore_revived.blood": "Blood",
   "item.hardcore_revived.blood.tooltip_0": "Obtained by killing passive mobs with a butcher knife",
+  "item.hardcore_revived.binding_tablet": "Binding Tablet",
+  "item.hardcore_revived.binding_tablet.bound": "Bound Tablet",
 
   "block.hardcore_revived.revival_altar": "Revival Altar",
   "block.hardcore_revived.blood_block": "Blood Block",
+  "block.hardcore_revived.dead_man_switch": "Dead Man Switch",
 
   "itemGroup.hardcore_revived.hardcore_revived_group": "Hardcore Revived"
 }

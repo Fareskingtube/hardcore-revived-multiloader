@@ -2,9 +2,11 @@ package io.github.fareskingtube.hardcore_revived.event;
 
 import com.mojang.authlib.GameProfile;
 import io.github.fareskingtube.hardcore_revived.Constants;
+import io.github.fareskingtube.hardcore_revived.block.entity.custom.DeadManSwitchBlockEntity;
 import io.github.fareskingtube.hardcore_revived.block.entity.custom.RevivalAltarBlockEntity;
 import io.github.fareskingtube.hardcore_revived.config.CommonConfig;
 import io.github.fareskingtube.hardcore_revived.item.ModItems;
+import io.github.fareskingtube.hardcore_revived.persistent.DeadManSwitchState;
 import io.github.fareskingtube.hardcore_revived.persistent.DeadPlayersState;
 import io.github.fareskingtube.hardcore_revived.persistent.QueuedPlayer;
 import io.github.fareskingtube.hardcore_revived.persistent.RevivalQueueState;
@@ -37,12 +39,27 @@ public class EventHelpers {
         }
     }
 
-
     public static void handelDeath(Entity livingEntity, DamageSource damageSource) {
         if (livingEntity instanceof ServerPlayer player) {
             MinecraftServer server = player.getServer();
             if (server == null) return;
             DeadPlayersState.get(server).addDeadPlayer(new GameProfile(player.getUUID(), player.getScoreboardName()));
+
+            DeadManSwitchState state = DeadManSwitchState.get(server);
+
+            QueuedPlayer queuedPlayer = state.getPlayer(player.getUUID());
+
+            if (queuedPlayer == null) return;
+
+            ServerLevel world = server.getLevel(queuedPlayer.world());
+
+            if (world == null) return;
+
+            if (world.getBlockEntity(queuedPlayer.pos()) instanceof DeadManSwitchBlockEntity deadManSwitchBlockEntity) {
+                deadManSwitchBlockEntity.pulse();
+            } else {
+                state.removeQueuedPlayer(queuedPlayer.pos(), queuedPlayer.world());
+            }
         }
 
         CommonConfig config = CommonConfig.HANDLER.instance();
@@ -87,7 +104,11 @@ public class EventHelpers {
         if (world.getBlockEntity(queuedPlayer.pos()) instanceof RevivalAltarBlockEntity revivalAltarBlockEntity) {
             if (revivalAltarBlockEntity.isMultiblock(world, revivalAltarBlockEntity.getBlockPos())) {
                 revivalAltarBlockEntity.revivePlayer();
+            } else {
+                state.removeQueuedPlayer(queuedPlayer.pos(), queuedPlayer.world());
             }
+        } else {
+            state.removeQueuedPlayer(queuedPlayer.pos(), queuedPlayer.world());
         }
     }
 }

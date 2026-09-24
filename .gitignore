@@ -24,3 +24,5 @@ run
 runs
 
 .wakatime-project
+
+.cache/

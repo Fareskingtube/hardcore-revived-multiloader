@@ -16,6 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
         blockStateModelGenerator.createTrivialCube(ModBlocks.BLOOD_BLOCK);
+
     }
 
     @Override
@@ -24,5 +25,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.generateFlatItem(ModItems.BUTCHER_KNIFE, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(ModItems.HEART_EXTRACTOR, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(ModItems.BLOOD, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ModItems.BINDING_TABLET, ModelTemplates.FLAT_ITEM);
     }
 }

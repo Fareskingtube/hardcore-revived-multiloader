@@ -14,7 +14,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        // dropSelf(ModBlocks.REVIVAL_ALTAR);
+        dropSelf(ModBlocks.REVIVAL_ALTAR);
+        dropSelf(ModBlocks.DEAD_MAN_SWITCH);
         dropSelf(ModBlocks.BLOOD_BLOCK);
     }
 }

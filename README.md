@@ -104,8 +104,8 @@ The **known** places where generative was used to write code:
 
 1. Spawning particle methods at `RevivalAltarBlockentity.java`
 2. Fetching and Caching offline player skins at
-   `client/PlayerProfileTextureCache.java`
-3. Small help with styling (Centering a div) at `client/PlayerSelectorScreen.java`
+   `PlayerProfileTextureCache.java`
+3. Small help with styling (Centering a div) at `PlayerSelectorScreen.java`
 
 **Note:** Any "borrowed" code has its source above it.
 
