@@ -2,7 +2,7 @@
 
 # Hardcore Revived
 
-This is a fabric minecraft mod that tries to enhance the multiplayer hardcore experience by allowing you to revive your
+This is a minecraft mod that tries to enhance the multiplayer hardcore experience by allowing you to revive your
 dead
 friends in a **Revival Altar** by **sacrificing** one of your **hearts**.
 
@@ -18,16 +18,15 @@ The Revival Altar is the center of this mod it has 2 main functions:
 [//]: # (TODO: Edit README.md to reflect the new revival system)
 
 1. It passively gives you regeneration while within its range.
-2. Allows you to revive your friends by placing a heart in it then getting your friend who's in spectator mode within
-   its range.
+2. Allows you to revive your friends by placing a heart in it then getting your dead friend by selecting them with the hardcore heart.
 
 ## The Altar
 
-[![Revival Altar Video](https://i.ibb.co/ynv4TLf5/image.png)](https://youtu.be/oQ9XKFr5kiY)
+https://github.com/user-attachments/assets/14041ca7-c528-4cc7-9a47-1ba8683584e1
 
 ## Revival
 
-[![Revival Altar Revival Video](https://i.ibb.co/BVvqgx4y/2026-08-06-14-42-15.png)](https://youtu.be/zcmzzAZ1ubY)
+https://github.com/user-attachments/assets/b490ae9a-fab4-4d6e-8b80-991e4ae72480
 
 ## Hardcore Heart
 
@@ -36,7 +35,11 @@ It can be obtained via **heart extractor**.
 Once you have a heart it can be reinjected via **Heart Injector**,
 gifted to a friend or thrown into lava.
 
-[![Revival Altar Video](https://i.ibb.co/fYWgTYm4/2026-08-06-14-45-45.png)](https://youtu.be/Y6KFRJC33Tc)
+https://github.com/user-attachments/assets/5c52b20e-a997-4035-bc47-7dd7782cd1ac
+
+To select a player using the **Hardcore Heart** Hold [Right-Click] to open the dead player selection screen then select the player you want to revive. The **Hardcore Heart** will show the selected player's name if a player is selected.
+
+To reset the selected player put the **Hardcore Heart** in a crafting table.
 
 ## Resuscitatio Mortuorum
 
@@ -45,6 +48,19 @@ Also shows you a framework on how to build the [Altar Multiblock](#the-revival-a
 the [provided video](#the-altar).
 
 You should spawn with it when making a new world, but you can also craft it with a **book** and a **blood block**.
+
+## Butcher's Knife
+
+The **Butcher's Knife** is the survival way of obtaining **Blood** to create **Blood Blocks** for the [Revival Altar](#the-altar).
+To obtain **Blood** you have to kill a passive mob with a **Butcher's Knife**.
+
+## The Dead Man Switch & Binding Tablet
+
+![Dead Man Switch Photo](https://i.ibb.co/gkgX9pP/Screenshot-2026-11-27-155435.png)
+
+The **Dead Man Switch** is a functional block that pulses a redstone signal once a select player has **died**.
+To use the **Dead Man Switch** you give a **Binding Tablet** to the person you want to receive a signal upon their death. Then you have them use it. Once the **Binding Tablet** has been **Bound**, you put the **Bound tablet** in the **Dead Man Switch
+Block**.
 
 # Requirements
 
