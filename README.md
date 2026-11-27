@@ -22,11 +22,11 @@ The Revival Altar is the center of this mod it has 2 main functions:
 
 ## The Altar
 
-https://github.com/user-attachments/assets/14041ca7-c528-4cc7-9a47-1ba8683584e1
+https://github.com/user-attachments/assets/8c41ffea-e6d7-4c33-b51b-03afc38852ef
 
 ## Revival
 
-https://github.com/user-attachments/assets/b490ae9a-fab4-4d6e-8b80-991e4ae72480
+https://github.com/user-attachments/assets/c0356ec8-9b5f-44b7-9f89-281fc2a50836
 
 ## Hardcore Heart
 
