@@ -59,7 +59,7 @@ To obtain **Blood** you have to kill a passive mob with a **Butcher's Knife**.
 ![Dead Man Switch Photo](https://i.ibb.co/gkgX9pP/Screenshot-2026-11-27-155435.png)
 
 The **Dead Man Switch** is a functional block that pulses a redstone signal once a select player has **died**.
-To use the **Dead Man Switch** you give a **Binding Tablet** to the person you want to receive a signal upon their death. Then you have them use _[Shift + Right-Click]_ it. Once the **Binding Tablet** has been **Bound**, you put the **Bound tablet** in
+To use the **Dead Man Switch** you give a **Binding Tablet** to the player you want to receive a signal upon their death. Then you have them use _[Shift + Right-Click]_ it. Once the **Binding Tablet** has been **Bound**, you put the **Bound tablet** in
 the **Dead Man Switch
 Block**. Once the person the tablet is **Bound** to dies you'll receive a redstone pulse.
 
